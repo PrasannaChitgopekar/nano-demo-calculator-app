@@ -16,16 +16,18 @@ baseRouter.get('/greeting', (req, res) => {
 baseRouter.post('/add', (req, res) => {
     let {
         first ,second 
-    } = req.body();
-    
+    } = req.body;
+
     res.json({ "result": first+second });
+
 });
 
 
 baseRouter.post('/subtract', (req, res) => {
     let {
         first ,second 
-    } = req.body();
+    } = req.body;
+    
     res.json({ "result": first-second });
 });
 
