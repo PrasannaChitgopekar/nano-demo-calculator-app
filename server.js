@@ -17,6 +17,7 @@ baseRouter.post('/add', (req, res) => {
     let {
         first ,second 
     } = req.body();
+    
     res.json({ "result": first+second });
 });
 
